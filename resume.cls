@@ -19,7 +19,8 @@
 \RequirePackage{hyperref}
 \hypersetup{
 	colorlinks=true,
-	urlcolor=black
+	urlcolor=black,
+	pdfborderstyle={/S/U/W 1}
 }
 
 % Lists
@@ -35,20 +36,17 @@
 % Headings
 \RequirePackage{titlesec}
 %%% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
+%%% \titlespacing{<command>}{<left>}{<before>}{<after>}[<right>]
+
 \titleformat{\section}
 	{\bfseries\Huge\scshape\sffamily\center}{}{0em}{}
+\titlespacing{\section}
+	{0pt}{0pt}{0pt}
 
 \titleformat{\subsection}
 	{\bfseries\large\sffamily}{}{0em}{\uppercase}[\titlerule]
-
-\titleformat{\subsubsection}
-	{\bfseries\sffamily}{}{0em}{\uppercase}
-
-\titleformat{\paragraph}
-	{}{}{0em}{}
-
-\titleformat{\subparagraph}
-	{}{}{0em}{}
+\titlespacing*{\subsection}
+	{0pt}{6pt}{6pt}
 
 % Macros
 \newcommand{\email}[1]{
@@ -80,5 +78,11 @@
 }
 
 \newcommand{\infoLocationDate}[3]{
-	\textbf{\uppercase{#1} | \emph{#2} \hfill \emph{#3}} \\
+	\vspace{1mm}
+	\textbf{\uppercase{#1} | \emph{#2} \hfill \emph{#3}}
+}
+
+\newcommand{\company}[1]{
+	\vspace{1mm}
+	\uppercase{\textbf{#1}} \\
 }
