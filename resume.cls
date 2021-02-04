@@ -36,6 +36,8 @@
 	parsep=2pt
 }
 
+\RequirePackage{soul}
+
 % Custom Headings and Subheadings
 \RequirePackage{titlesec}
 %%% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
@@ -59,7 +61,7 @@
 \newcommand{\phone}[1]{#1}
 
 \newcommand{\linkedin}[1]{
-	\uppercase{\textbf{LinkedIn}}: \href{https://linkedin.com/in/#1}{\uppercase{#1}}
+	\uppercase{\textbf{\so{LinkedIn}}}: \href{https://linkedin.com/in/#1}{\uppercase{#1}}
 }
 \newcommand{\github}[1]{
 	\uppercase{\textbf{Github}}: \href{https://github.com/#1}{\uppercase{#1}}
