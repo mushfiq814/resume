@@ -22,6 +22,16 @@
 	urlcolor=black
 }
 
+% Lists
+\RequirePackage{enumitem}
+\setlist{
+	leftmargin=5mm,
+	topsep=2pt,
+	partopsep=2pt,
+	itemsep=2pt,
+	parsep=2pt
+}
+
 % Headings
 \RequirePackage{titlesec}
 %%% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
@@ -29,7 +39,7 @@
 	{\bfseries\Huge\scshape\sffamily\center}{}{0em}{}
 
 \titleformat{\subsection}
-	{\bfseries\Large\sffamily}{}{0em}{\uppercase}[\titlerule]
+	{\bfseries\large\sffamily}{}{0em}{\uppercase}[\titlerule]
 
 \titleformat{\subsubsection}
 	{\bfseries\sffamily}{}{0em}{\uppercase}
@@ -67,4 +77,8 @@
 
 \newcommand{\linkseparator}[0]{
 	\large\textperiodcentered \ 
+}
+
+\newcommand{\infoLocationDate}[3]{
+	\textbf{\uppercase{#1} | \emph{#2} \hfill \emph{#3}} \\
 }
