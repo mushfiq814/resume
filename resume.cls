@@ -1,5 +1,8 @@
-% Extend Article Class
+% Extend Article Class with paper and font size
 \LoadClass[a4paper,10pt]{extarticle}
+
+% Remove Page Numbering
+\pagestyle{empty}
 
 % Margins
 \RequirePackage{geometry}
@@ -14,7 +17,6 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{helvet}
-% \fontsize{9pt}
 
 % Hyperlinks
 \RequirePackage{hyperref}
@@ -34,7 +36,7 @@
 	parsep=2pt
 }
 
-% Headings
+% Custom Headings and Subheadings
 \RequirePackage{titlesec}
 %%% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
 %%% \titlespacing{<command>}{<left>}{<before>}{<after>}[<right>]
@@ -50,38 +52,26 @@
 	{0pt}{8pt}{6pt}
 
 % Macros
-\newcommand{\email}[1]{
-	\href{mailto:#1}{\uppercase{#1}}
-}
 
-\newcommand{\address}[1]{
-	\uppercase{#1}
-}
-
-\newcommand{\phone}[1]{
-	#1
-}
+% Links
+\newcommand{\email}[1]{\href{mailto:#1}{\uppercase{#1}}}
+\newcommand{\address}[1]{\uppercase{#1}}
+\newcommand{\phone}[1]{#1}
 
 \newcommand{\linkedin}[1]{
 	\uppercase{\textbf{LinkedIn}}: \href{https://linkedin.com/in/#1}{\uppercase{#1}}
 }
-
 \newcommand{\github}[1]{
 	\uppercase{\textbf{Github}}: \href{https://github.com/#1}{\uppercase{#1}}
 }
-
 \newcommand{\website}[1]{
 	\uppercase{\textbf{Website}}: \href{https://#1}{\uppercase{#1}}
 }
-
 \newcommand{\linkseparator}[0]{
 	\large\textperiodcentered \ 
 }
 
-\newcommand{\company}[1]{
-	\uppercase{\textbf{#1}}
-}
-
+% Subheadings
 \newcommand{\schoolInfoLocationDate}[3]{
 	\noindent\textbf{\uppercase{#1} | \emph{#2} \hfill \emph{#3}}
 	\vspace{2mm}
