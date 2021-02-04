@@ -1,5 +1,5 @@
 % Extend Article Class
-\LoadClass{article}
+\LoadClass[a4paper,10pt]{extarticle}
 
 % Margins
 \RequirePackage{geometry}
@@ -14,6 +14,7 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{helvet}
+% \fontsize{9pt}
 
 % Hyperlinks
 \RequirePackage{hyperref}
@@ -39,14 +40,14 @@
 %%% \titlespacing{<command>}{<left>}{<before>}{<after>}[<right>]
 
 \titleformat{\section}
-	{\bfseries\Huge\scshape\sffamily\center}{}{0em}{}
+	{\bfseries\LARGE\sffamily\center}{}{0em}{\uppercase}
 \titlespacing{\section}
 	{0pt}{0pt}{0pt}
 
 \titleformat{\subsection}
-	{\bfseries\large\sffamily}{}{0em}{\uppercase}[\titlerule]
+	{\bfseries\sffamily}{}{0em}{\uppercase}[\titlerule]
 \titlespacing*{\subsection}
-	{0pt}{6pt}{6pt}
+	{0pt}{8pt}{6pt}
 
 % Macros
 \newcommand{\email}[1]{
@@ -77,12 +78,16 @@
 	\large\textperiodcentered \ 
 }
 
-\newcommand{\infoLocationDate}[3]{
-	\vspace{1mm}
-	\textbf{\uppercase{#1} | \emph{#2} \hfill \emph{#3}}
+\newcommand{\company}[1]{
+	\uppercase{\textbf{#1}}
 }
 
-\newcommand{\company}[1]{
-	\vspace{1mm}
-	\uppercase{\textbf{#1}} \\
+\newcommand{\schoolInfoLocationDate}[3]{
+	\noindent\textbf{\uppercase{#1} | \emph{#2} \hfill \emph{#3}}
+	\vspace{2mm}
+}
+
+\newcommand{\jobInfoLocationDate}[4]{
+	\noindent\textbf{\uppercase{#1} @ #2 | \emph{#3} \hfill \emph{#4}}
+	\vspace{2mm}
 }
