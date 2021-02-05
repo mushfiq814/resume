@@ -8,7 +8,7 @@
 \RequirePackage{geometry}
 \geometry{
 	top=0.3in,
-	bottom=0.5in,
+	bottom=0.4in,
 	left=0.5in,
 	right=0.5in
 }
@@ -65,7 +65,7 @@
 \titleformat{\subsection}
 	{\bfseries\normalsize}{}{0em}{\uppercase}[\titlerule]
 \titlespacing*{\subsection}
-	{0pt}{6pt}{6pt}
+	{0pt}{6pt}{5pt}
 
 % Macros
 
