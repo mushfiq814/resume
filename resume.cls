@@ -70,28 +70,28 @@
 % Macros
 
 % Links
-\newcommand{\email}[1]{\href{mailto:#1}{\uppercase{#1}}}
-\newcommand{\address}[1]{\uppercase{#1}}
-\newcommand{\phone}[1]{\fasPhone \ #1}
+\newcommand{\email}[1]{\fasEnvelope \hspace{1mm} \href{mailto:#1}{\uppercase{#1}}}
+\newcommand{\address}[1]{\fasMapMarker \hspace{1mm} \uppercase{#1}}
+\newcommand{\phone}[1]{\fasPhone \hspace{1mm} #1}
 
 \newcommand{\linkedin}[1]{
-	\uppercase{\textbf{LinkedIn}} \href{https://linkedin.com/in/#1}{\uppercase{#1}}
+	\uppercase{\fabLinkedin \hspace{1mm} } \href{https://linkedin.com/in/#1}{\uppercase{#1}}
 }
 \newcommand{\github}[1]{
-	\uppercase{\textbf{Github}} \href{https://github.com/#1}{\uppercase{#1}}
+	\uppercase{\fabGithub \hspace{1mm} } \href{https://github.com/#1}{\uppercase{#1}}
 }
 \newcommand{\website}[1]{
-	\uppercase{\textbf{Website}} \href{https://#1}{\uppercase{#1}}
+	\uppercase{\fasGlobe \hspace{1mm} } \href{https://#1}{\uppercase{#1}}
 }
 \newcommand{\linkseparator}[0]{\char"25A0 \ }
 
 % Subheadings
 \newcommand{\schoolInfoLocationDate}[3]{
-	\noindent\textbf{\uppercase{#1} \symbol{"F095} \emph{#2} \hfill \emph{#3}}
+	\noindent\textbf{\uppercase{#1} \hspace{1mm} \fasCaretRight \hspace{1mm} \emph{#2} \hfill \emph{#3}}
 	\vspace{1mm}
 }
 
 \newcommand{\jobInfoLocationDate}[4]{
-	\noindent\textbf{\uppercase{#1} @ #2 \char"25FC \ \emph{#3} \hfill \emph{#4}}
+	\noindent\textbf{\uppercase{#1} @ #2 \hspace{1mm} \fasCaretRight \hspace{1mm} \emph{#3} \hfill \emph{#4}}
 	\vspace{1mm}
 }
