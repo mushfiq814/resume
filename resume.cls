@@ -25,7 +25,7 @@
 	BoldItalicFont=SF-Pro-Display-BlackItalic.otf
 ]
 % \setmainfont{OpenSans}[
-% 	Path          =fonts/Open_Sans/,
+% 	Path          =fonts/open-sans/,
 % 	UprightFont   =OpenSans-Regular.ttf,
 % 	BoldFont      =OpenSans-ExtraBold.ttf,
 % 	ItalicFont    =OpenSans-Italic.ttf,
