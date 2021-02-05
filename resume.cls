@@ -14,9 +14,23 @@
 }
 
 % Fonts
-\RequirePackage[T1]{fontenc}
-\RequirePackage[utf8]{inputenc}
-\RequirePackage{helvet}
+% \RequirePackage[T1]{fontenc}
+% \RequirePackage[utf8]{inputenc}
+\RequirePackage{fontspec}
+\setmainfont{SF-Pro-Display}[
+	Path          =fonts/sf-pro-display/,
+	UprightFont   =SF-Pro-Display-Regular.otf,
+	BoldFont      =SF-Pro-Display-Black.otf,
+	ItalicFont    =SF-Pro-Display-RegularItalic.otf,
+	BoldItalicFont=SF-Pro-Display-BlackItalic.otf
+]
+% \setmainfont{OpenSans}[
+% 	Path          =fonts/Open_Sans/,
+% 	UprightFont   =OpenSans-Regular.ttf,
+% 	BoldFont      =OpenSans-ExtraBold.ttf,
+% 	ItalicFont    =OpenSans-Italic.ttf,
+% 	BoldItalicFont=OpenSans-ExtraBoldItalic.ttf
+% ]
 
 % Hyperlinks
 \RequirePackage{hyperref}
@@ -44,12 +58,12 @@
 %%% \titlespacing{<command>}{<left>}{<before>}{<after>}[<right>]
 
 \titleformat{\section}
-	{\bfseries\LARGE\sffamily\center}{}{0em}{\uppercase}
+	{\bfseries\LARGE\center}{}{0em}{\uppercase}
 \titlespacing{\section}
 	{0pt}{0pt}{0pt}
 
 \titleformat{\subsection}
-	{\bfseries\sffamily}{}{0em}{\uppercase}[\titlerule]
+	{\bfseries}{}{0em}{\uppercase}[\titlerule]
 \titlespacing*{\subsection}
 	{0pt}{8pt}{6pt}
 
@@ -61,7 +75,7 @@
 \newcommand{\phone}[1]{#1}
 
 \newcommand{\linkedin}[1]{
-	\uppercase{\textbf{\so{LinkedIn}}}: \href{https://linkedin.com/in/#1}{\uppercase{#1}}
+	\uppercase{\textbf{LinkedIn}}: \href{https://linkedin.com/in/#1}{\uppercase{#1}}
 }
 \newcommand{\github}[1]{
 	\uppercase{\textbf{Github}}: \href{https://github.com/#1}{\uppercase{#1}}
