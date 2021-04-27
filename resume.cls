@@ -43,9 +43,9 @@
 % Lists
 \RequirePackage{enumitem}
 \setlist{
-	leftmargin=5mm,
-	topsep=2pt,
-	partopsep=2pt,
+	leftmargin=4mm,
+	topsep=1pt,
+	partopsep=1pt,
 	itemsep=1pt,
 	parsep=1pt
 }
@@ -88,10 +88,10 @@
 % Subheadings
 \newcommand{\schoolInfoLocationDate}[3]{
 	\noindent\textbf{\uppercase{#1} \hspace{1mm} \fasCaretRight \hspace{1mm} \emph{#2} \hfill \emph{#3}}
-	\vspace{1mm}
+	\vspace{1pt}
 }
 
 \newcommand{\jobInfoLocationDate}[4]{
 	\noindent\textbf{\uppercase{#1} @ #2 \hspace{1mm} \fasCaretRight \hspace{1mm} \emph{#3} \hfill \emph{#4}}
-	\vspace{1mm}
+	\vspace{1pt}
 }
