@@ -95,3 +95,9 @@
 	\noindent\textbf{\uppercase{#1} @ #2 \hspace{1mm} \fasCaretRight \hspace{1mm} \emph{#3} \hfill \emph{#4}}
 	\vspace{1pt}
 }
+
+% List items
+\newcommand{\li}[1]{\item \small \raggedright #1}
+
+% symbols
+\newcommand{\hyphen}[0]{\char"2012 \ }
