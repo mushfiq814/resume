@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "description": "my resume rendered using react",
-  "main": "index.js",
+  "main": "src/index.js",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.17.0",
@@ -11,7 +11,7 @@
     "@babel/preset-react": "^7.16.7"
   },
   "scripts": {
-    "compile": "babel-node index.js"
+    "compile": "babel-node src/index.js"
   },
   "dependencies": {
     "@react-pdf/renderer": "^3.0.1",
