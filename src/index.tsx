@@ -44,6 +44,6 @@ const Resume = () => (
   </Document>
 )
 
-const output = `${__dirname}/resume.pdf`;
+const output = `${process.cwd()}/resume.pdf`;
 renderToFile(<Resume />, output);
 console.log(`compiled pdf to ${output}`);
