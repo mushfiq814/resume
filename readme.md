@@ -39,7 +39,3 @@ $ npm run lint:fix
 # or
 $ yarn lint:fix
 ```
-
-## Preview
-
-![screenshot](./images/scrot-2021-02-05.png)
