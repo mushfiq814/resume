@@ -1,6 +1,16 @@
-# Custom Resume Template
+# Resume
 
-This repo houses my custom LaTeX resume template as well as the actual resume.
+Contains tools to generate a resume in pdf using [React PDF renderer](https://github.com/diegomura/react-pdf/tree/master/packages/renderer).
+
+## Toolchain
+
+This project uses the following tools:
+
+* NodeJS: JavaScript engine
+* TypeScript: provides type checking at compile time
+* React: declarative UI to make resume
+* ReactPDF: generate PDF files from React virtual tree
+* eslint: linting and enforcing consistent code style
 
 ## Contributing
 
@@ -8,22 +18,28 @@ Have any criticisms about my resume? Please [submit an issue](https://github.com
 
 ## Compiling
 
-Make sure `resume` is included as the document class using
-
-```tex
-\documentclass{resume}
-```
-
-This sources the `resume.cls` class.
-
-To compile,
+Make sure `nodejs` and `npm` (or `yarn`) are installed. Instructions for [node](https://nodejs.org/en) and [yarn](https://classic.yarnpkg.com/en/)
 
 ```sh
-# compile all tex files in project root
-$ xelatex *.tex
-# or specify your tex file
-$ xelatex myresume.tex
+$ npm run compile
+# or
+$ yarn compile
+```
+
+## Linting
+
+```sh
+# to check lint warnings/errors
+$ npm run lint
+# or
+$ yarn lint
+
+# to fix lint warnings/errors
+$ npm run lint:fix
+# or
+$ yarn lint:fix
 ```
 
 ## Preview
+
 ![screenshot](./images/scrot-2021-02-05.png)
