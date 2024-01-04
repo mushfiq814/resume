@@ -1,8 +1,9 @@
-import React from 'react';
-import SubHeader from './SubHeader';
-import JobInfoLocationDate from './JobInfoLocationDate';
-import ListItem from './ListItem';
-import { View, Text } from '@react-pdf/renderer';
+import React from "react";
+import { View, Text } from "@react-pdf/renderer";
+
+import SubHeader from "./SubHeader";
+import JobInfoLocationDate from "./JobInfoLocationDate";
+import ListItem from "./ListItem";
 
 const Education = () => (
   <SubHeader title="Education">
@@ -27,6 +28,6 @@ const Education = () => (
       <ListItem>Achievements: Honors College, Honors Scholarship, Phi Kappa Phi Honors Society Member, Undergraduate Research.</ListItem>
     </View>
   </SubHeader>
-)
+);
 
 export default Education;

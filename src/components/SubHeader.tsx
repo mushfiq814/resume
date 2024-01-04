@@ -1,10 +1,10 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 import {
   Line,
   Svg,
   Text,
   View,
-} from '@react-pdf/renderer';
+} from "@react-pdf/renderer";
 
 const SubHeader = ({ title, children }: { title: string, children: ReactNode }) => (
   <View style={{
@@ -13,7 +13,7 @@ const SubHeader = ({ title, children }: { title: string, children: ReactNode }) 
     <Text style={{
       fontWeight: 900,
       fontSize: 11,
-      textTransform: 'uppercase',
+      textTransform: "uppercase",
     }}>
       {title.split("").join(" ")}
     </Text>
@@ -30,6 +30,6 @@ const SubHeader = ({ title, children }: { title: string, children: ReactNode }) 
       {children}
     </View>
   </View>
-)
+);
 
 export default SubHeader;

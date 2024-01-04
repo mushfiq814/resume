@@ -1,6 +1,7 @@
-import React, { ReactNode } from 'react';
-import { View, Text } from '@react-pdf/renderer';
-import { ChevronRightIcon } from '../icons';
+import React, { ReactNode } from "react";
+import { View, Text } from "@react-pdf/renderer";
+
+import { ChevronRightIcon } from "../icons";
 
 type JobInfoLocationDateProps = {
   title: string,
@@ -47,11 +48,11 @@ const JobInfoLocationDate = ({
         fontWeight: 700,
         fontStyle: "italic",
       }}>
-        {`${start}${end ? ` - ${end}` : ''}`}
+        {`${start}${end ? ` - ${end}` : ""}`}
       </Text>
     </View>
     {children}
   </View>
-)
+);
 
 export default JobInfoLocationDate;

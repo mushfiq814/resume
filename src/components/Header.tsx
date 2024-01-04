@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 import {
   Text,
   View,
-} from '@react-pdf/renderer';
+} from "@react-pdf/renderer";
+
 import {
   GitHubLink,
   LinkRow,
@@ -12,7 +13,7 @@ import {
   MailLink,
   PhoneLink,
   WebsiteLink,
-} from "./LinkSection"
+} from "./LinkSection";
 
 const Header = () => (
   <>
@@ -30,18 +31,18 @@ const Header = () => (
       </LinkRow>
     </LinkSection>
   </>
-)
+);
 
 const Title = ({ title }: { title: string }) => (
   <View style={{
     fontSize: 17,
-    width: '100%',
-    textAlign: 'center',
-    textTransform: 'uppercase',
+    width: "100%",
+    textAlign: "center",
+    textTransform: "uppercase",
     fontWeight: 900,
   }}>
     <Text>{title}</Text>
   </View>
-)
+);
 
 export default Header;

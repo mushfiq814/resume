@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import ReactPDF, { Svg, Path } from '@react-pdf/renderer';
+import React, { ReactNode } from "react";
+import ReactPDF, { Svg, Path } from "@react-pdf/renderer";
 
 const FILL_COLOR = "#000000";
 const STROKE_WIDTH = 0;
@@ -24,7 +24,7 @@ const IconBase = ({
   >
     {children}
   </Svg>
-)
+);
 
 export const EnvelopeIcon = ({ height = 15, width = 15 }) => (
   <IconBase
@@ -39,7 +39,7 @@ export const EnvelopeIcon = ({ height = 15, width = 15 }) => (
       strokeWidth={STROKE_WIDTH}
     />
   </IconBase>
-)
+);
 
 export const MapMarkerIcon = ({ height = 15, width = 15 }) => (
   <IconBase
@@ -54,7 +54,7 @@ export const MapMarkerIcon = ({ height = 15, width = 15 }) => (
       strokeWidth={STROKE_WIDTH}
     />
   </IconBase>
-)
+);
 
 export const GitHubIcon = ({ height = 15, width = 15 }) => (
   <IconBase
@@ -69,7 +69,7 @@ export const GitHubIcon = ({ height = 15, width = 15 }) => (
       strokeWidth={STROKE_WIDTH}
     />
   </IconBase>
-)
+);
 
 export const PhoneIcon = ({ height = 16, width = 16 }) => (
   <IconBase
@@ -84,7 +84,7 @@ export const PhoneIcon = ({ height = 16, width = 16 }) => (
       strokeWidth={STROKE_WIDTH}
     />
   </IconBase>
-)
+);
 
 export const LinkedInIcon = ({ height = 16, width = 14 }) => (
   <IconBase
@@ -99,7 +99,7 @@ export const LinkedInIcon = ({ height = 16, width = 14 }) => (
       strokeWidth={STROKE_WIDTH}
     />
   </IconBase>
-)
+);
 
 export const GlobeIcon = ({ height = 16, width = 15.5 }) => (
   <IconBase
@@ -114,7 +114,7 @@ export const GlobeIcon = ({ height = 16, width = 15.5 }) => (
       strokeWidth={STROKE_WIDTH}
     />
   </IconBase>
-)
+);
 
 export const ChevronRightIcon = ({ height = 16, width = 8 }) => (
   <IconBase
@@ -129,4 +129,4 @@ export const ChevronRightIcon = ({ height = 16, width = 8 }) => (
       strokeWidth={STROKE_WIDTH}
     />
   </IconBase>
-)
+);

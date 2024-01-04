@@ -1,8 +1,9 @@
-import React from 'react';
-import SubHeader from './SubHeader';
-import JobInfoLocationDate from './JobInfoLocationDate';
-import ListItem from './ListItem';
-import { View } from '@react-pdf/renderer';
+import React from "react";
+import { View } from "@react-pdf/renderer";
+
+import SubHeader from "./SubHeader";
+import JobInfoLocationDate from "./JobInfoLocationDate";
+import ListItem from "./ListItem";
 
 const JobExperience = () => (
   <SubHeader title="Job Experience">
@@ -59,6 +60,6 @@ const JobExperience = () => (
     </View>
 
   </SubHeader>
-)
+);
 
 export default JobExperience;
