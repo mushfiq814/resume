@@ -1,8 +1,8 @@
-import React from "react";
 import { Link, StyleSheet } from "@react-pdf/renderer";
+import React from "react";
 
-import SubHeader from "./SubHeader";
 import ListItem from "./ListItem";
+import SubHeader from "./SubHeader";
 
 const styles = StyleSheet.create({
   link: {

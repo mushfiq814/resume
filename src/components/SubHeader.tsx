@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
 import {
   Line,
   Svg,
   Text,
   View,
 } from "@react-pdf/renderer";
+import React, { ReactNode } from "react";
 
 const SubHeader = ({ title, children }: { title: string, children: ReactNode }) => (
   <View style={{

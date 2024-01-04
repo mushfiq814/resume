@@ -33,6 +33,9 @@ rules:
   import/order:
     - error
     - newlines-between: always
+      alphabetize:
+        order: asc
+        caseInsensitive: true
 settings:
   react:
     version: detect

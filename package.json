@@ -1,11 +1,12 @@
 {
   "name": "resume",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "my resume rendered using react",
   "main": "src/index.tsx",
   "license": "MIT",
   "scripts": {
-    "compile": "tsc && babel-node dist/index.js",
+    "precompile": "tsc",
+    "compile": "babel-node dist/index.js",
     "lint": "eslint src/**",
     "postlint": "echo 'run yarn lint:fix to fix lint issues'",
     "lint:fix": "eslint --fix src/**"

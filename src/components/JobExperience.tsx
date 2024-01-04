@@ -1,9 +1,9 @@
-import React from "react";
 import { View } from "@react-pdf/renderer";
+import React from "react";
 
-import SubHeader from "./SubHeader";
 import JobInfoLocationDate from "./JobInfoLocationDate";
 import ListItem from "./ListItem";
+import SubHeader from "./SubHeader";
 
 const JobExperience = () => (
   <SubHeader title="Job Experience">

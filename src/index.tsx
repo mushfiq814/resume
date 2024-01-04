@@ -1,15 +1,15 @@
-import React from "react";
 import {
   Document,
   Font,
   Page,
   renderToFile,
 } from "@react-pdf/renderer";
+import React from "react";
 
-import Header from "./components/Header";
-import Objective from "./components/Objective";
 import Education from "./components/Education";
+import Header from "./components/Header";
 import JobExperience from "./components/JobExperience";
+import Objective from "./components/Objective";
 import Projects from "./components/Projects";
 
 // TODO: add all font weights
