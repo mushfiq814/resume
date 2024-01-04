@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { View, Text } from '@react-pdf/renderer';
 
-const ListItem = ({ children }) => (
+const ListItem = ({ children }: { children: ReactNode }) => (
   <View style={{
     display: 'flex',
     flexDirection: 'row',

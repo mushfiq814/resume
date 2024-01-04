@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import {
   Line,
   Svg,
@@ -6,7 +6,7 @@ import {
   View,
 } from '@react-pdf/renderer';
 
-const SubHeader = ({ title, children }) => (
+const SubHeader = ({ title, children }: { title: string, children: ReactNode }) => (
   <View style={{
     marginVertical: 5,
   }}>

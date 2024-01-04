@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { View, Text } from '@react-pdf/renderer';
 import { ChevronRightIcon } from '../icons';
+
+type JobInfoLocationDateProps = {
+  title: string,
+  subtitle?: string,
+  location: string,
+  start: string,
+  end?: string,
+  children?: ReactNode,
+}
 
 const JobInfoLocationDate = ({
   title,
@@ -9,7 +18,7 @@ const JobInfoLocationDate = ({
   start,
   end = undefined,
   children,
-}) => (
+}: JobInfoLocationDateProps) => (
   <View style={{
     flexDirection: "row",
     justifyContent: "space-between",

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Link, Text, View } from '@react-pdf/renderer';
 import {
   GitHubIcon,
@@ -11,7 +11,7 @@ import {
 
 const ICON_DIMENSIONS = 10;
 
-export const LinkSection = ({ children }) => (
+export const LinkSection = ({ children }: { children: ReactNode }) => (
   <View style={{
     marginTop: 2,
     gap: 3,
@@ -20,7 +20,7 @@ export const LinkSection = ({ children }) => (
   </View>
 );
 
-export const LinkRow = ({ children }) => (
+export const LinkRow = ({ children }: { children: ReactNode }) => (
   <View style={{
     justifyContent: 'center',
     flexDirection: 'row',
@@ -31,7 +31,13 @@ export const LinkRow = ({ children }) => (
   </View>
 );
 
-const LinkItem = ({ icon, content, href = "#", debug = false }) => (
+type LinkItemProps = {
+  icon: ReactNode,
+  content: string,
+  href?: string,
+  debug?: boolean
+}
+const LinkItem = ({ icon, content, href = "#", debug = false }: LinkItemProps) => (
   <View debug={debug} style={{
     fontSize: 11,
     textAlign: 'center',
@@ -49,41 +55,41 @@ const LinkItem = ({ icon, content, href = "#", debug = false }) => (
   </View>
 )
 
-export const MailLink = ({ email }) =>
+export const MailLink = ({ email }: { email: string }) =>
   <LinkItem
     icon={<EnvelopeIcon height={ICON_DIMENSIONS} width={ICON_DIMENSIONS} />}
     content={email}
     href={`mailto:${email}`}
   />
 
-export const LocationLink = ({ location }) =>
+export const LocationLink = ({ location }: { location: string }) =>
   <LinkItem
     icon={<MapMarkerIcon height={ICON_DIMENSIONS} width={ICON_DIMENSIONS} />}
     content={location}
   />
 
-export const PhoneLink = ({ phone }) =>
+export const PhoneLink = ({ phone }: { phone: string }) =>
   <LinkItem
     icon={<PhoneIcon height={ICON_DIMENSIONS} width={ICON_DIMENSIONS} />}
     content={phone}
     href={`tel:+1${phone.replaceAll("-", "")}`}
   />
 
-export const LinkedInLink = ({ username }) =>
+export const LinkedInLink = ({ username }: { username: string }) =>
   <LinkItem
     icon={<LinkedInIcon height={ICON_DIMENSIONS} width={ICON_DIMENSIONS} />}
     content={username}
     href={`https://linkedin.com/in/${username}`}
   />
 
-export const GitHubLink = ({ username }) =>
+export const GitHubLink = ({ username }: { username: string }) =>
   <LinkItem
     icon={<GitHubIcon height={ICON_DIMENSIONS} width={ICON_DIMENSIONS} />}
     content={username}
     href={`https://github.com/${username}`}
   />
 
-export const WebsiteLink = ({ href }) => (
+export const WebsiteLink = ({ href }: { href: string }) => (
   <LinkItem
     icon={<GlobeIcon height={ICON_DIMENSIONS} width={ICON_DIMENSIONS} />}
     content={href}

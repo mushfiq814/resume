@@ -2,19 +2,24 @@
   "name": "resume",
   "version": "0.1.0",
   "description": "my resume rendered using react",
-  "main": "src/index.js",
+  "main": "src/index.tsx",
   "license": "MIT",
+  "scripts": {
+    "compile": "tsc && babel-node dist/index.js"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
     "@babel/core": "^7.17.0",
     "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7"
-  },
-  "scripts": {
-    "compile": "babel-node src/index.js"
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.46"
   },
   "dependencies": {
     "@react-pdf/renderer": "^3.0.1",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "typescript": "^5.3.3"
   }
 }

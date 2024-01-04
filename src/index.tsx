@@ -11,8 +11,7 @@ import Education from './components/Education';
 import JobExperience from './components/JobExperience';
 import Projects from './components/Projects';
 
-// TODO: use typescript
-
+// TODO: add all font weights
 const fontPath = "./fonts/sf-pro-display";
 Font.register({
   family: 'SF Pro Display', fonts: [
@@ -24,6 +23,8 @@ Font.register({
     { src: `${fontPath}/SF-Pro-Display-BlackItalic.otf`, fontStyle: 'italic', fontWeight: 900 },
   ]
 });
+
+// TODO: add eslint and prettier formatting
 
 const Resume = () => (
   <Document>

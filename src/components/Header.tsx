@@ -32,7 +32,7 @@ const Header = () => (
   </>
 )
 
-const Title = ({ title }) => (
+const Title = ({ title }: { title: string }) => (
   <View style={{
     fontSize: 17,
     width: '100%',
