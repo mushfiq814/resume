@@ -1,6 +1,9 @@
 env:
   es2021: true
   node: true
+ignorePatterns:
+  - "**/*.json"
+  - "icons.tsx"
 extends:
   - eslint:recommended
   - plugin:@typescript-eslint/recommended
@@ -17,6 +20,9 @@ rules:
   indent:
     - error
     - 2
+  max-len:
+    - error
+    - code: 80
   linebreak-style:
     - error
     - unix

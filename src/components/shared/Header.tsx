@@ -6,7 +6,13 @@ import {
 } from "@react-pdf/renderer";
 import React, { ReactNode } from "react";
 
-const SubHeader = ({ title, children }: { title: string, children: ReactNode }) => (
+const Header = ({
+  title,
+  children
+}: {
+  title: string,
+  children: ReactNode
+}) => (
   <View style={{
     marginVertical: 5,
   }}>
@@ -32,4 +38,4 @@ const SubHeader = ({ title, children }: { title: string, children: ReactNode }) 
   </View>
 );
 
-export default SubHeader;
+export default Header;

@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 
 const FILL_COLOR = "#000000";
 const STROKE_WIDTH = 0;
-const STROKE_COLOR = "#666666";
+const STROKE_COLOR = "#999999";
 
 type IconBaseProps = ReactPDF.SVGProps & {
   children: ReactNode,

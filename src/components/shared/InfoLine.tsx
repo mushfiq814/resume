@@ -1,7 +1,7 @@
 import { View, Text } from "@react-pdf/renderer";
 import React, { ReactNode } from "react";
 
-import { ChevronRightIcon } from "../icons";
+import { ChevronRightIcon } from "../../icons";
 
 type JobInfoLocationDateProps = {
   title: string,
@@ -12,7 +12,7 @@ type JobInfoLocationDateProps = {
   children?: ReactNode,
 }
 
-const JobInfoLocationDate = ({
+const InfoLine = ({
   title,
   subtitle = undefined,
   location,
@@ -55,4 +55,4 @@ const JobInfoLocationDate = ({
   </View>
 );
 
-export default JobInfoLocationDate;
+export default InfoLine;

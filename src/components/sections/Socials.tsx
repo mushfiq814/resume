@@ -8,20 +8,38 @@ import {
   PhoneIcon,
   LinkedInIcon,
   GlobeIcon,
-} from "../icons";
+} from "../../icons";
 
 const ICON_DIMENSIONS = 10;
 
-export const LinkSection = ({ children }: { children: ReactNode }) => (
+type SocialsContent = {
+  email: string
+  location: string
+  phone: string
+  linkedIn: string
+  github: string
+  website: string
+}
+
+const Socials = ({ content }: { content: SocialsContent }) => (
   <View style={{
     marginTop: 2,
     gap: 3,
   }}>
-    {children}
+    <Row>
+      <MailLink email={content.email} />
+      <LocationLink location={content.location} />
+      <PhoneLink phone={content.phone} />
+    </Row>
+    <Row>
+      <LinkedInLink username={content.linkedIn} />
+      <GitHubLink username={content.github} />
+      <WebsiteLink href={content.website} />
+    </Row>
   </View>
 );
 
-export const LinkRow = ({ children }: { children: ReactNode }) => (
+const Row = ({ children }: { children: ReactNode }) => (
   <View style={{
     justifyContent: "center",
     flexDirection: "row",
@@ -38,7 +56,11 @@ type LinkItemProps = {
   href?: string,
   debug?: boolean
 }
-const LinkItem = ({ icon, content, href = "#", debug = false }: LinkItemProps) => (
+const LinkItem = ({ icon,
+  content,
+  href = "#",
+  debug = false
+}: LinkItemProps) => (
   <View debug={debug} style={{
     fontSize: 11,
     textAlign: "center",
@@ -97,3 +119,5 @@ export const WebsiteLink = ({ href }: { href: string }) => (
     href={`https://${href}`}
   />
 );
+
+export default Socials;

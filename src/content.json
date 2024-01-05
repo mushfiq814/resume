@@ -1,0 +1,93 @@
+{
+  "name": "Mushfiq Mahmud",
+  "socials": {
+    "email": "mushfiq8194@gmail.com",
+    "location": "Tampa, FL",
+    "phone": "813-570-1426",
+    "linkedIn": "mushfiq-mahmud",
+    "github": "mushfiq814",
+    "website": "mushfiqmahmud.com"
+  },
+  "objective": "Software Developer with professional experience in NodeJS, TypeScript, JavaScript, React, PHP and SQL.",
+  "education": [
+    {
+      "school": "University of South Florida (USF)",
+      "location": "Tampa, FL",
+      "graduation": "May 2022",
+      "degree": "Master of Science in Computer Science",
+      "gpa": "GPA: 3.6",
+      "bullets": [
+        "Major Coursework: Adv. Databases, Image Processing, Compilers, Operating Systems, Algorithms, Computer Architecture.",
+        "Achievements: Honors College, Honors Scholarship, Phi Kappa Phi Honors Society Member, Undergraduate Research."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "position": "Full Stack Engineer",
+      "company": "Everest LLC",
+      "location": "Tampa, FL",
+      "start": "Oct 2021",
+      "end": "Present",
+      "bullets": [
+        "Modernize Legacy monolithic loan application into 4 separate microservices for a large financial company spanning back end and front end to integrate with legacy codebase working closely with internal teams following Agile methods.",
+        "Worked with Product and Design team as well as a dev team of 12-20 people to complete assigned issues under strict deadlines and outstanding communication skills using productivity and communication tools such as Jira, Slack.",
+        "Utilized software collaboration tools/patterns such as BitBucket, Git Flow, constant Code Reviews, Retrospectives, demos/lunch & learns  and Documentation on Confluence to produce professional and readable code with a leading edge web stack consisting of JavaScript, ReactJS, NextJS, Apollo GraphQL, ExpressJS, Webpack and a mobile first design view.",
+        "Collaborated with QA every sprint for automation and integration testing & unit testing using Jest, Postman and Storybook.",
+        "Spearheaded complete DocuSign contract generation flow using advanced postman tooling such as GraphQL schema automation & scripting to chain multiple scripts using the collection runner reducing manual application for team members.",
+        "Participated in extensive training with Contentful to learn to utilize their SDK and APIs for ecommerce.",
+        "Create a modern web app MVP for Design System collaboration including integrations with Figma, Loom and Slack APIs.",
+        "Build out UI design library from Figma designs with component reusability, accessibility and UX in mind, regular demos/showcases, prioritizing feature delivery within 3 months while having clean code.",
+        "Collaborate with developers using GitHub flow, Code Reviews, Pair Programming, Issue Tracking and robust CI/CD pipelines using tools and technologies including TypeScript, ReactJS, TailwindCSS, Remix, Prisma, PostgreSQL, React-aria, and Vite.",
+        "Constant testing with Vitest, Cypress E2E testing, React Testing Library, Storybook snapshots and Unit Testing."
+      ]
+    },
+    {
+      "position": "Full Stack Web Developer",
+      "company": "Disciplined Minds Tutoring LLC",
+      "location": "Tampa, FL",
+      "start": "Dec 2017",
+      "end": "Sep 2021",
+      "bullets": [
+        "Reduced 20 man-hours per week developing mission critical application to automate day-to-day administrative tasks.",
+        "Saved costs by 60% by building in house application using Apple FileMaker involving database schema design & modelling, Join Tables to connect many-to-many relationships and automating payments via Authorize.net API.",
+        "Handled tens of thousands of records spread across around 100 tables amidst an ever-growing customer base and implementing database changes for an improved online booking experience during the 2020 coronavirus pandemic.",
+        "Lead educational sessions for team members as a subject matter expert (SME) for FileMaker and Web Technologies.",
+        "Assisted in entire system transition from proprietary server software (FileMaker Server) to AWS EC2, S3 for storage and Route 53 for DNS including backup systems via batch scripts, setting up remote desktop connections and maintaining event logs.",
+        "Increased remote work opportunities by creating a responsive browser version of our main FileMaker application to help employees work from home providing functionality to sign for sessions, write notes and maintain appointment schedules.",
+        "Built a Middleware API in PHP with multiple data end points providing access to information such as availability of employees for booking appointments based on existing booked sessions and calendar blocks and retrieving subject availability per tutor.",
+        "Integrated with 3rd party public APIs such as Google Calendar, Gmail and FileMaker APIs via PHP JSON parsing libraries.",
+        "Implemented manual datetime conversion between FileMaker timestamps and ISO-8601 date format including daylight savings calculations since no well known library for dealing with datetime exists in FileMaker.",
+        "Made use of React functional components, hooks, React Router, MVC framework, Context API, component libraries (react datepickers), SCSS, Bootstrap & styled components to offer smooth functionality for clients to book online appointments."
+      ]
+    }
+  ],
+  "projects": [
+    "Create a compiler from scratch for a Java-like Object Oriented language into Assembly using C without libraries.",
+    "Implement PostgreSQL custom aggregates and functions by modifying source code as well as using PL/SQL.",
+    {
+      "template": "Create single page application in Angular8 using YouTube API to browse and watch videos ($).",
+      "delimeter": "$",
+      "links": [
+        {
+          "href": "https://github.com/mushfiq814/youtube-data-api-dogVids",
+          "text": "link"
+        }
+      ]
+    },
+    {
+      "template": "More projects on my $ and $.",
+      "delimeter": "$",
+      "links": [
+        {
+          "href": "https://mushfiqmahmud.com/html/projects",
+          "text": "website"
+        },
+        {
+          "href": "https://github.com/mushfiq814",
+          "text": "github"
+        }
+      ]
+    }
+  ]
+}
