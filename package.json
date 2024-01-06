@@ -1,0 +1,34 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "my resume rendered using react",
+  "main": "src/index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "precompile": "tsc",
+    "compile": "babel-node dist/index.js",
+    "lint": "eslint src/**",
+    "postlint": "echo 'run yarn lint:fix to fix lint issues'",
+    "lint:fix": "eslint --fix src/**"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.17.0",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.46",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-react": "^7.33.2"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^3.0.1",
+    "react": "^17.0.2",
+    "typescript": "^5.3.3"
+  }
+}
