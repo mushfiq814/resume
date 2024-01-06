@@ -43,3 +43,7 @@ $ npm run lint:fix
 # or
 $ yarn lint:fix
 ```
+
+## Preview
+
+![2024-01-06T14-33-23-606556935](https://github.com/mushfiq814/resume/assets/32845348/02cc16bb-a21e-4a67-a55f-a8f51a5de9a6)
