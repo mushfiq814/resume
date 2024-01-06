@@ -20,7 +20,7 @@ const Resume = () => (
       paddingHorizontal: 30,
       paddingBottom: 20,
       flexDirection: "column",
-      fontFamily: 'SF Pro Display',
+      fontFamily: "SF Pro Display",
     }}>
       <Title content={content.name} />
       <Socials content={content.socials} />
