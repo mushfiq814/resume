@@ -24,7 +24,11 @@ Make sure `nodejs` and `npm` (or `yarn`) are installed. Instructions for [node](
 $ npm run compile
 # or
 $ yarn compile
+
+# ...compiled pdf to /home/mushfiq/projects/resume/resume.pdf
 ```
+
+The output pdf should be generated.
 
 ## Linting
 
