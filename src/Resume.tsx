@@ -12,9 +12,10 @@ import Socials from "./components/sections/Socials";
 import Title from "./components/sections/Title";
 import content from "./content.json";
 
+// TODO: add cli arg parser to get content file from
 const Resume = () => (
   <Document>
-    <Page size='A4' style={{
+    <Page size="A4" style={{
       paddingTop: 20,
       paddingHorizontal: 30,
       paddingBottom: 20,
