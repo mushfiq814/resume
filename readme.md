@@ -2,6 +2,8 @@
 
 Contains tools to generate a resume in pdf using [React PDF renderer](https://github.com/diegomura/react-pdf/tree/master/packages/renderer).
 
+Note: The LaTeX version of this is located in the `latex` branch. Please use `git checkout latex`.
+
 ## Toolchain
 
 This project uses the following tools:
