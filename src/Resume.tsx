@@ -25,8 +25,8 @@ const Resume = () => (
       <Title content={content.name} />
       <Socials content={content.socials} />
       <Objective content={content.objective} />
-      <Education content={content.education} />
       <JobExperience content={content.experience} />
+      <Education content={content.education} />
       <Projects content={content.projects} />
     </Page>
   </Document>
