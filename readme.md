@@ -14,6 +14,14 @@ This project uses the following tools:
 * ReactPDF: generate PDF files from React virtual tree
 * eslint: linting and enforcing consistent code style
 
+## Structure
+
+All source files (TypeScript, TSX React) are located in `src`. The structure is as follows.
+
+* all resume sections (Job Experience, Objective, Projects, etc.) are in `src/sections`.
+* all UI components shared by the sections are located in `src/shared`.
+* all content is centralized as json files. These are `src/content.json` (for specialized content) and `src/content-master.json` (for all historical content that can take more than a page). The UI components pull from these files to populate their content.
+
 ## Contributing
 
 Have any criticisms about my resume? Please [submit an issue](https://github.com/mushfiq814/resume/issues/new/choose) and tell me about it. I would greatly appreciate it!
