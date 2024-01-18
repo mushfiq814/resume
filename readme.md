@@ -54,6 +54,25 @@ $ npm run lint:fix
 $ yarn lint:fix
 ```
 
+## Releases
+
+Generated PDFs are available as part of releases. There is no release schedule. The releases are tagged with the date that the resume PDF was generated in. Steps to create a release are as follows.
+
+* generate pdf
+* create a tag
+
+  ```sh
+  # git tag <date>, e.g.
+  $ git tag 2024-01-06
+
+  # git push origin <tag>
+  $ git push origin 2024-01-06
+  ```
+
+* create a release in GitHub
+* attach generated pdf as part of release
+* publish release
+
 ## Preview
 
 ![2024-01-06T14-33-23-606556935](https://github.com/mushfiq814/resume/assets/32845348/02cc16bb-a21e-4a67-a55f-a8f51a5de9a6)
