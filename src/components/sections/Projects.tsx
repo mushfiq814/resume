@@ -1,15 +1,15 @@
 import React from "react";
 
 import Header from "../shared/Header";
-import HyperTextListItem, { HyperText } from "../shared/HyperTextListItem";
+import List from "../shared/List";
 
-type ProjectContent = (string | HyperText)[];
+type ProjectContent = string[];
 
 const Projects = ({ content }: { content: ProjectContent }) => (
   <Header title="Projects">
-    {content.map((point, i) => (
-      <HyperTextListItem key={i} item={point} />
-    ))}
+    <List>
+      {content}
+    </List>
   </Header >
 );
 
