@@ -6,98 +6,174 @@ import React from "react";
 
 import Resume from "./Resume";
 
-const fontPath = "./fonts/sf-pro-display";
+const font1Path = "./fonts/sf-pro-display";
 Font.register({
   family: "SF Pro Display", fonts: [
     {
-      src: `${fontPath}/SF-Pro-Display-Thin.otf`,
+      src: `${font1Path}/SF-Pro-Display-Thin.otf`,
       fontStyle: "normal",
       fontWeight: "thin"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-ThinItalic.otf`,
+      src: `${font1Path}/SF-Pro-Display-ThinItalic.otf`,
       fontStyle: "italic",
       fontWeight: "thin"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-Ultralight.otf`,
+      src: `${font1Path}/SF-Pro-Display-Ultralight.otf`,
       fontStyle: "normal",
       fontWeight: "ultralight"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-UltralightItalic.otf`,
+      src: `${font1Path}/SF-Pro-Display-UltralightItalic.otf`,
       fontStyle: "italic",
       fontWeight: "ultralight"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-Light.otf`,
+      src: `${font1Path}/SF-Pro-Display-Light.otf`,
       fontStyle: "normal",
       fontWeight: "light"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-LightItalic.otf`,
+      src: `${font1Path}/SF-Pro-Display-LightItalic.otf`,
       fontStyle: "italic",
       fontWeight: "light"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-Regular.otf`,
+      src: `${font1Path}/SF-Pro-Display-Regular.otf`,
       fontStyle: "normal",
       fontWeight: "normal"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-RegularItalic.otf`,
+      src: `${font1Path}/SF-Pro-Display-RegularItalic.otf`,
       fontStyle: "italic",
       fontWeight: "normal"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-Medium.otf`,
+      src: `${font1Path}/SF-Pro-Display-Medium.otf`,
       fontStyle: "normal",
       fontWeight: "medium"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-MediumItalic.otf`,
+      src: `${font1Path}/SF-Pro-Display-MediumItalic.otf`,
       fontStyle: "italic",
       fontWeight: "medium"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-Semibold.otf`,
+      src: `${font1Path}/SF-Pro-Display-Semibold.otf`,
       fontStyle: "normal",
       fontWeight: "semibold"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-SemiboldItalic.otf`,
+      src: `${font1Path}/SF-Pro-Display-SemiboldItalic.otf`,
       fontStyle: "italic",
       fontWeight: "semibold"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-Bold.otf`,
+      src: `${font1Path}/SF-Pro-Display-Bold.otf`,
       fontStyle: "normal",
       fontWeight: "bold"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-BoldItalic.otf`,
+      src: `${font1Path}/SF-Pro-Display-BoldItalic.otf`,
       fontStyle: "italic",
       fontWeight: "bold"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-Black.otf`,
+      src: `${font1Path}/SF-Pro-Display-Black.otf`,
       fontStyle: "normal",
       fontWeight: "ultrabold"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-BlackItalic.otf`,
+      src: `${font1Path}/SF-Pro-Display-BlackItalic.otf`,
       fontStyle: "italic",
       fontWeight: "ultrabold"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-Heavy.otf`,
+      src: `${font1Path}/SF-Pro-Display-Heavy.otf`,
       fontStyle: "normal",
       fontWeight: "heavy"
     },
     {
-      src: `${fontPath}/SF-Pro-Display-HeavyItalic.otf`,
+      src: `${font1Path}/SF-Pro-Display-HeavyItalic.otf`,
       fontStyle: "italic",
       fontWeight: "heavy"
+    },
+  ],
+});
+
+const font2Path = "./fonts/hasklug";
+Font.register({
+  family: "hasklug", fonts: [
+    {
+      src: `${font2Path}/HasklugNerdFont-ExtraLightItalic.otf`,
+      fontStyle: "italic",
+      fontWeight: "ultralight",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-LightItalic.otf`,
+      fontStyle: "italic",
+      fontWeight: "light",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-Italic.otf`,
+      fontStyle: "italic",
+      fontWeight: "normal",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-MediumItalic.otf`,
+      fontStyle: "italic",
+      fontWeight: "medium",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-SemiBoldItalic.otf`,
+      fontStyle: "italic",
+      fontWeight: "semibold",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-BoldItalic.otf`,
+      fontStyle: "italic",
+      fontWeight: "bold",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-BlackItalic.otf`,
+      fontStyle: "italic",
+      fontWeight: "heavy",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-ExtraLight.otf`,
+      fontStyle: "normal",
+      fontWeight: "ultralight",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-Light.otf`,
+      fontStyle: "normal",
+      fontWeight: "light",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-Regular.otf`,
+      fontStyle: "normal",
+      fontWeight: "normal",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-Medium.otf`,
+      fontStyle: "normal",
+      fontWeight: "medium",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-SemiBold.otf`,
+      fontStyle: "normal",
+      fontWeight: "semibold",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-Bold.otf`,
+      fontStyle: "normal",
+      fontWeight: "bold",
+    },
+    {
+      src: `${font2Path}/HasklugNerdFont-Black.otf`,
+      fontStyle: "normal",
+      fontWeight: "heavy",
     },
   ]
 });
