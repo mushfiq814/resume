@@ -25,8 +25,8 @@ const Header = ({
     </Text>
 
     {/* TODO: make width dynamic */}
-    <Svg height="10" width="535">
-      <Line x1="0" y1="5" x2="535" y2="5" strokeWidth={1} stroke="rgb(0,0,0)" />
+    <Svg height="10" width="520">
+      <Line x1="0" y1="5" x2="520" y2="5" strokeWidth={1} stroke="rgb(0,0,0)" />
     </Svg>
 
     <View style={{

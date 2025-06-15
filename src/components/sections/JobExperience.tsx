@@ -2,8 +2,8 @@ import { View } from "@react-pdf/renderer";
 import React, { Fragment } from "react";
 
 import Header from "../shared/Header";
-import HyperTextListItem, { HyperText } from "../shared/HyperTextListItem";
 import InfoLine from "../shared/InfoLine";
+import List from "../shared/List";
 
 type JobExperienceContent = {
   position: string
@@ -11,7 +11,7 @@ type JobExperienceContent = {
   location: string
   start: string
   end: string
-  bullets: (string | HyperText)[]
+  bullets: string[]
 }
 
 const JobExperience = ({ content }: { content: JobExperienceContent[] }) => (
@@ -29,9 +29,9 @@ const JobExperience = ({ content }: { content: JobExperienceContent[] }) => (
           lineHeight: 1.3,
           marginVertical: 5,
         }}>
-          {experience.bullets.map((bullet, i) => (
-            <HyperTextListItem key={i} item={bullet} />
-          ))}
+          <List>
+            {experience.bullets}
+          </List>
         </View>
       </Fragment>
     ))}

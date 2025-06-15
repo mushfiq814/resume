@@ -21,11 +21,20 @@ type SocialsContent = {
   website: string
 }
 
-const Socials = ({ content }: { content: SocialsContent }) => (
-  <View style={{
-    marginTop: 2,
-    gap: 3,
-  }}>
+const Socials = ({
+  content,
+  debug = false,
+}: {
+  content: SocialsContent,
+  debug?: boolean,
+}) => (
+  <View
+    style={{
+      marginTop: 2,
+      gap: 3,
+    }}
+    debug={debug}
+  >
     <Row>
       <MailLink email={content.email} />
       <LocationLink location={content.location} />
@@ -39,13 +48,22 @@ const Socials = ({ content }: { content: SocialsContent }) => (
   </View>
 );
 
-const Row = ({ children }: { children: ReactNode }) => (
-  <View style={{
-    justifyContent: "center",
-    flexDirection: "row",
-    width: "100%",
-    gap: 14,
-  }}>
+const Row = ({
+  children,
+  debug = false,
+}: {
+  children: ReactNode,
+  debug?: boolean,
+}) => (
+  <View
+    style={{
+      justifyContent: "center",
+      flexDirection: "row",
+      width: "100%",
+      gap: 14,
+    }}
+    debug={debug}
+  >
     {children}
   </View>
 );
@@ -61,14 +79,22 @@ const LinkItem = ({ icon,
   href = "#",
   debug = false
 }: LinkItemProps) => (
-  <View debug={debug} style={{
-    fontSize: 11,
-    textAlign: "center",
-    textTransform: "uppercase",
-    flexDirection: "row",
-    alignItems: "center",
-  }}>
-    <View style={{ marginRight: 7 }}>{icon}</View>
+  <View
+    style={{
+      fontSize: 11,
+      textAlign: "center",
+      textTransform: "uppercase",
+      flexDirection: "row",
+      alignItems: "center",
+    }}
+    debug={debug}
+  >
+    <View
+      style={{ marginRight: 7 }}
+      debug={debug}
+    >
+      {icon}
+    </View>
     <Link src={href} style={{
       color: "black",
       textDecoration: "none",

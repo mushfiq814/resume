@@ -1,11 +1,11 @@
-import { Text } from "@react-pdf/renderer";
 import React from "react";
 
 import Header from "../shared/Header";
+import MarkdownText from "../shared/MarkdownText";
 
 const Objective = ({ content }: { content: string }) => (
   <Header title="Objective">
-    <Text>{content}</Text>
+    <MarkdownText>{content}</MarkdownText>
   </Header>
 );
 

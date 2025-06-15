@@ -2,8 +2,8 @@ import { View, Text } from "@react-pdf/renderer";
 import React, { Fragment } from "react";
 
 import Header from "../shared/Header";
-import HyperTextListItem, { HyperText } from "../shared/HyperTextListItem";
 import InfoLine from "../shared/InfoLine";
+import List from "../shared/List";
 
 type EducationContent = {
   school: string
@@ -11,7 +11,7 @@ type EducationContent = {
   graduation: string
   degree: string
   gpa: string
-  bullets: (string | HyperText)[]
+  bullets: string[]
 }
 
 const Education = ({ content: education }: { content: EducationContent[] }) => (
@@ -35,9 +35,9 @@ const Education = ({ content: education }: { content: EducationContent[] }) => (
           lineHeight: 1.3,
           marginVertical: 3,
         }}>
-          {education.bullets.map((point, i) => (
-            <HyperTextListItem key={i} item={point} />
-          ))}
+          <List>
+            {education.bullets}
+          </List>
         </View>
       </Fragment>
     ))}
