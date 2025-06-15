@@ -7,11 +7,12 @@ const ListItem = ({ children }: { children: string }) => (
   <View style={{
     display: "flex",
     flexDirection: "row",
+    textAlign: "justify",
   }}>
     <View style={{
       height: "100%",
     }}>
-      <Text>{"• "}</Text>
+      <Text>{"•  "}</Text>
     </View>
     <MarkdownText>{children}</MarkdownText>
   </View>

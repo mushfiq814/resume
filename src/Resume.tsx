@@ -17,7 +17,7 @@ const Resume = () => (
   <Document>
     <Page size="A4" style={{
       paddingTop: 20,
-      paddingHorizontal: 30,
+      paddingHorizontal: 50,
       paddingBottom: 20,
       flexDirection: "column",
       fontFamily: "SF Pro Display",
